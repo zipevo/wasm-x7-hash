@@ -1,6 +1,7 @@
 const Module = require('./wasm-build/x11_hash')
 const validateArguments = require('./lib/validator');
 const utils = require('./lib/utils');
+const errors = require('./lib/errors')
 
 const OUTPUT_HASH_SIZE = 32;
 
@@ -11,37 +12,6 @@ const wasmApi = {
   create_buffer: Module.cwrap('create_buffer', 'number', ['number']),
   destroy_buffer: Module.cwrap('destroy_buffer', '', ['number']),
 };
-
-// function toUint8Array(buf) {
-//   const ab = new ArrayBuffer(buf.length);
-//   const view = new Uint8Array(ab);
-//   for (let i = 0; i < buf.length; ++i) {
-//     view[i] = buf[i];
-//   }
-//   return view;
-// }
-//
-// function toBuffer(ab) {
-//   const buf = Buffer.alloc(ab.byteLength);
-//   const view = new Uint8Array(ab);
-//   for (let i = 0; i < buf.length; ++i) {
-//     buf[i] = view[i];
-//   }
-//   return buf;
-// }
-
-// const withCBindings = hashFunction =>
-//   (input, inputFormat, outputFormat) => {
-//     validateArguments(input, inputFormat, outputFormat);
-//     let data;
-//     if (inputFormat === 1) {
-//       data = input;
-//     } else if (input === 2) {
-//       data = utils.int32Buffer2Bytes(input);
-//     } else {
-//       data = utils.string2bytes(input);
-//     }
-//   }
 
 const digest = (rawInput, inputFormat, outputFormat) => {
   validateArguments(rawInput, inputFormat, outputFormat);
@@ -78,7 +48,8 @@ const digest = (rawInput, inputFormat, outputFormat) => {
 }
 
 const api = {
-  digest
+  digest,
+  errors
 }
 
 Module.onRuntimeInitialized = () => {
