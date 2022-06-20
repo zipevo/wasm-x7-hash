@@ -4,7 +4,9 @@
   "description": "WASM JS binding for X11 hashing algorithm",
   "main": "x11.js",
   "scripts": {
-    "test": "mocha 'test/**/*.spec.js'"
+    "test": "npm run test:mocha && npm run test:browsers",
+    "test:mocha": "mocha 'test/**/*.spec.js'",
+    "test:browsers": "karma start ./karma.conf.js --single-run"
   },
   "repository": {
     "type": "git",
@@ -27,8 +29,12 @@
     "url": "https://github.com/dashevo/wasm-x11-hash/issues"
   },
   "homepage": "https://github.com/dashevo/wasm-x11-hash#readme",
-  "dependencies": {
+  "devDependencies": {
     "chai": "^4.3.6",
+    "karma": "^6.4.0",
+    "karma-browserify": "^8.1.0",
+    "karma-chrome-launcher": "^3.1.1",
+    "karma-mocha": "^2.0.1",
     "mocha": "^10.0.0"
   }
 }
