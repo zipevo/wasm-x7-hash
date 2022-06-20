@@ -1,0 +1,30 @@
+{
+  "name": "@dashevo/x11-hash-js",
+  "version": "0.0.1",
+  "description": "WASM JS binding for X11 hashing algorithm",
+  "main": "x11.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dashevo/wasm-x11-hash.git"
+  },
+  "keywords": [
+    "x11",
+    "dash",
+    "hash",
+    "256",
+    "crypto",
+    "cryptocurrency"
+  ],
+  "author": {
+    "name": "Igor Markin",
+    "email": "igor.markin@dash.org"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dashevo/wasm-x11-hash/issues"
+  },
+  "homepage": "https://github.com/dashevo/wasm-x11-hash#readme"
+}

@@ -1,9 +1,3 @@
-#include <stdlib.h>
-#include <stdint.h>
-#include <string.h>
-#include <stdio.h>
-
-
 #ifndef X11_H
 #define X11_H
 
@@ -12,6 +6,9 @@ extern "C" {
 #endif
 
 #include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 
 void x11_hash(const char* input, char* output, uint32_t len);
 
