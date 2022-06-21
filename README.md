@@ -4,10 +4,10 @@
 [![Release Date](https://img.shields.io/github/release-date/dashevo/wasm-x11-hash)](https://github.com/dashevo/wasm-x11-hash/releases/latest)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen)](https://github.com/RichardLitt/standard-readme)
 
-WASM binding for X11 hashing algorithm
+WASM binding for X11 hashing algorithm written in C
 
 ## Installation and usage
-`$ npm install @dashevo/wasm-x11-hash`
+- `$ npm install @dashevo/wasm-x11-hash`
 
 ```javascript
 const X11 = require('@dashevo/wasm-x11-hash');
@@ -17,11 +17,9 @@ X11().then(x11 => {
 });
 ```
 
-## Build
-_Docker v20 is required_
+## Build and test
+_Docker v20+ is required_
 
-`$ npm run build`
-
-## Test
 - `$ npm run build`
 - `$ npm run test`
+
