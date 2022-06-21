@@ -53,19 +53,6 @@ describe('x11', () => {
 
     it('buffer outputFormat=1 -> 8 bit', function () {
       expect(x11.digest(buffer, 1, 1)).to.deep.equal([
-        25431772,
-        2140696654,
-        1013368572,
-        -1390505884,
-        708325244,
-        481603428,
-        -318219067,
-        201326592
-      ]);
-    });
-
-    it('buffer outputFormat=2 -> 32 bit', function () {
-      expect(x11.digest(buffer, 1, 2)).to.deep.equal([
         1,
         132,
         14,
@@ -98,6 +85,19 @@ describe('x11', () => {
         0,
         0,
         0
+      ]);
+    });
+
+    it('buffer outputFormat=2 -> 32 bit', function () {
+      expect(x11.digest(buffer, 1, 2)).to.deep.equal([
+        25431772,
+        2140696654,
+        1013368572,
+        -1390505884,
+        708325244,
+        481603428,
+        -318219067,
+        201326592
       ]);
     });
   })

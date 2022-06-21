@@ -40,9 +40,9 @@ const digest = wasmModule => {
     wasmApi.destroy_buffer(pIn)
     wasmApi.destroy_buffer(pOut)
 
-    if (outputFormat === 2) {
+    if (outputFormat === 1) {
       return Array.from(result);
-    } else if (outputFormat === 1) {
+    } else if (outputFormat === 2) {
       return utils.bytes2Int32Buffer(result);
     }
     return utils.int8ArrayToHexString(result);
