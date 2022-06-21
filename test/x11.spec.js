@@ -1,5 +1,5 @@
 const { expect } = require('chai');
-const loadX11 = require('../x11');
+const loadX11 = require('../lib/x11');
 
 const {
   fox,

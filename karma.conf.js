@@ -1,7 +1,3 @@
-const karmaBrowserify = require('karma-browserify');
-const karmaMocha = require('karma-mocha');
-const karmaChromeLauncher = require('karma-chrome-launcher');
-
 module.exports = function(config) {
   config.set({
     basePath: '',

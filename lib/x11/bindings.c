@@ -1,5 +1,5 @@
 #include "emscripten.h"
-#include "lib/x11.h"
+#include "x11.h"
 
 EMSCRIPTEN_KEEPALIVE
 // TODO: replace with uint32_t ?

@@ -2,11 +2,12 @@
   "name": "@dashevo/wasm-x11-hash",
   "version": "0.0.1",
   "description": "WASM JS binding for X11 hashing algorithm",
-  "main": "x11.js",
+  "main": "lib/x11.js",
   "scripts": {
+    "build": "./build.sh",
     "test": "npm run test:mocha && npm run test:browsers",
     "test:mocha": "mocha 'test/**/*.spec.js'",
-    "test:browsers": "karma start ./karma.conf.js --single-run"
+    "test:browsers": "karma start karma.conf.js --single-run"
   },
   "repository": {
     "type": "git",
