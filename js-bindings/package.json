@@ -1,5 +1,5 @@
 {
-  "name": "@dashevo/x11-hash-js",
+  "name": "@dashevo/wasm-x11-hash",
   "version": "0.0.1",
   "description": "WASM JS binding for X11 hashing algorithm",
   "main": "x11.js",
