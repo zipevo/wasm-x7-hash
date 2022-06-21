@@ -9,8 +9,8 @@ docker run -it \
   -w="/src" \
   $DOCKER_IMAGE \
   emcc -O3 -s WASM=1 -s EXTRA_EXPORTED_RUNTIME_METHODS='["cwrap"]' -s MODULARIZE=1 \
-        -o lib/wasm-build/x11_hash.js \
-        -I lib/x11/{sha3,}/*.c
+        -I lib/x11/{sha3,}/*.c \
+        -o lib/wasm-build/x11_hash.js
 
 WASM_BUILD_BASE_64=$(base64 lib/wasm-build/x11_hash.wasm)
 
