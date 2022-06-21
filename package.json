@@ -7,7 +7,8 @@
     "build": "./build.sh",
     "test": "npm run test:mocha && npm run test:browsers",
     "test:mocha": "mocha 'test/**/*.spec.js'",
-    "test:browsers": "karma start karma.conf.js --single-run"
+    "test:browsers": "karma start karma.conf.js --single-run",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",

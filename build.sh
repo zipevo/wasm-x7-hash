@@ -14,6 +14,8 @@ docker run -it \
 
 WASM_BUILD_BASE_64=$(base64 lib/wasm-build/x11-hash.wasm)
 
+# fs.readFile/fetch of `x11-hash.wasm` isn't suitable for bundling into libraries
+# Produce JS file with the wasm build base64 instead
 echo 'module.exports = "'${WASM_BUILD_BASE_64}'"' > lib/wasm-build/x11-hash-wasm-base64.js
 
 rm lib/wasm-build/x11-hash.wasm
