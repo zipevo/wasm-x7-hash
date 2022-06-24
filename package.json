@@ -4,7 +4,7 @@
   "description": "WASM JS binding for X11 hashing algorithm",
   "main": "lib/x11.js",
   "scripts": {
-    "build": "./build.sh",
+    "build": "scripts/build.sh",
     "lint": "eslint .",
     "test": "npm run test:mocha && npm run test:browsers",
     "test:mocha": "mocha 'test/**/*.spec.js'",
