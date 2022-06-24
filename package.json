@@ -1,5 +1,5 @@
 {
-  "name": "@dashevo/wasm-x11-hash",
+  "name": "wasm-x11-hash",
   "version": "1.0.0",
   "description": "WASM JS binding for X11 hashing algorithm",
   "main": "lib/x11.js",
@@ -25,7 +25,7 @@
   ],
   "author": {
     "name": "Igor Markin",
-    "email": "igor.markin@dash.org"
+    "email": "markin.io210@gmail.com"
   },
   "license": "MIT",
   "bugs": {
