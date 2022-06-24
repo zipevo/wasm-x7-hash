@@ -4,7 +4,7 @@ DOCKER_IMAGE=trzeci/emscripten-fastcomp
 mkdir -p lib/wasm-build
 rm -rf js-lib/wasm-build/*
 
-docker run -it \
+docker run \
   -v $(pwd):/src \
   -w="/src" \
   $DOCKER_IMAGE \
