@@ -1,0 +1,7 @@
+.idea
+.github
+node_modules
+scripts
+
+# Do not publish C code
+lib/x11
