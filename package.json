@@ -1,6 +1,6 @@
 {
   "name": "wasm-x11-hash",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "WASM JS binding for X11 hashing algorithm",
   "main": "lib/x11.js",
   "scripts": {
