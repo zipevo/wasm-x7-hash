@@ -12,7 +12,7 @@ on:
 
 jobs:
   test:
-    name: Run X11 hash tests
+    name: Run X7 hash tests
     runs-on: ubuntu-20.04
     timeout-minutes: 10
     steps:
