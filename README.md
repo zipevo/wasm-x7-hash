@@ -1,7 +1,7 @@
 # wasm-x7-hash
 [![NPM Version](https://img.shields.io/npm/v/wasm-x11-hash)](https://www.npmjs.com/package/wasm-x11-hash)
-[![Build Status](https://github.com/dashevo/wasm-x11-hash/actions/workflows/test_and_release.yml/badge.svg)](https://github.com/dashevo/wasm-x11-hash/actions/workflows/test_and_release.yml)
-[![Release Date](https://img.shields.io/github/release-date/dashevo/wasm-x11-hash)](https://github.com/dashevo/wasm-x11-hash/releases/latest)
+[![Build Status](https://github.com/zipevo/wasm-x11-hash/actions/workflows/test_and_release.yml/badge.svg)](https://github.com/zipevo/wasm-x11-hash/actions/workflows/test_and_release.yml)
+[![Release Date](https://img.shields.io/github/release-date/zipevo/wasm-x11-hash)](https://github.com/zipevo/wasm-x11-hash/releases/latest)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen)](https://github.com/RichardLitt/standard-readme)
 
 WASM binding for X7 hashing algorithm written in C

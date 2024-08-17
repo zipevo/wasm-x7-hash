@@ -6,7 +6,7 @@ const loadX7 = require('../lib/x7');
 const {
   fox,
   empty,
-  dash,
+  zip,
   longDream,
   buffer,
 } = require('./fixtures');
@@ -28,8 +28,8 @@ describe('x7', () => {
         .to.equal('534536a4e4f16b32447f02f77200449dc2f23b532e3d9878fe111c9de666bc5c');
     });
 
-    it('dash string', () => {
-      expect(x7.digest(dash).toString('hex'))
+    it('zip string', () => {
+      expect(x7.digest(zip).toString('hex'))
         .to.equal('fe809ebca8753d907f6ad32cdcf8e5c4e090d7bece5df35b2147e10b88c12d26');
     });
 
